@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance System</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <style>
+        
+        .container{
+            width: 400px;
+            margin: 10px auto;
+        }
+        table{
+            width: 400px;
+            background-color: antiquewhite;
+            border: 1px solid pink;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="">Attendance System</h1>
+        <p id="date_id"></p>
+        <form class="" action="" name="attendance-form">
+           <div class="form-group">
+                <label for="student-id">ID: </label>
+                <input class="form-control" type="text"  name="student-id" id="ID_id"> 
+           </div>
+
+            <div class="form-group">
+                <label for="student-name">Name: </label>
+                <input class="form-control" type="text" value="" name="student-name" id="name_id"> 
+            </div>
+
+            <div class="form-group">
+                <label for="subject">Subject: </label>
+                <input class="form-control" type="text" value="" name="subject" id="subject_id">
+            </div>
+
+            <input type="submit" class="btn btn-success" id="submit_id" value="Submit">
+        </form>
+
+
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Sub</th>
+                </tr>
+            </thead>
+            <tbody id="table_body">
+
+            </tbody>
+        </table>
+
+    </div>
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+
+    <script src="./attendance_script.js"></script>
+</body>
+</html>
